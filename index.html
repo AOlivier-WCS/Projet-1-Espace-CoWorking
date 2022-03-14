@@ -5,10 +5,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="media.css">
-
+<link rel="stylesheet" href="menu.css">
 <body>
-<header>
-    <img src="img/logo.png" alt="logoSC">
-</header>
+
+    <header class="header">
+        <nav>
+            <a href="#home" class="active"><img src="img/logo.png" alt="logoSC" width="50" height="50"></a> 
+          <a id="link" href="#"><span id="burger"></span></a>
+
+          <ul class="list-unstyled">
+            <li><a href="#" id="arrowSharing">Sharing is caring ?</a>
+                <ul id="hiddenSharing">
+                <li>Concept</li>
+                <li>Concept</li>
+                <li>Concept</li>
+                </ul>
+            </li>
+
+            <li><a href="#">Nos espaces coworking</a></li>
+            <li><a href="#">Nos services</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<script src="script.js"></script>
 </body>
 </html>
