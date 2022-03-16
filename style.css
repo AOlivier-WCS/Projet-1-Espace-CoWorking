@@ -25,4 +25,50 @@ h3 {
 h4 {
     font-size: 1.2 rem;
 }
-    
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.deco {
+    width: 80%;
+    height: auto;
+}*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.footer-community, .footer-info {
+    width: 70%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footer-community ul {
+    list-style-type:none;
+    display:grid;
+    grid-template-columns: 70% auto;
+    padding-inline-start: 0;
+}
+
+.footer-community li {
+    margin-right: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0px 5px;
+}
+
+.footer-info:last-child {
+    margin-bottom: 0.2em;
+}   
