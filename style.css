@@ -1,6 +1,28 @@
 :root {
-    --bleuclair : #8ecae6;
-    --mainColor : #023047;
-    --jaune : #ffb703;
-    --orange : #fb8500;
+     /* Mise en page Couleur thème */
+    --mainColor : #ffb703;
+    --secondaryColor : #023047;
+    /* Mise en page Police */
+    --policeColor : #000000;
+    --secondPoliceColor : #023047;
+    --FooterPoliceColor :var(--mainColor);
+    --PoliceFamily : 'Noto Sans', sans-serif;
 }
+
+    html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3 rem;
+}
+h2 {
+    font-size: 2 rem;
+}
+h3 {
+    font-size: 1.5 rem;
+}
+h4 {
+    font-size: 1.2 rem;
+}
+    
