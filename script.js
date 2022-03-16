@@ -2,20 +2,29 @@ let toggle = document.querySelector('.toggle');
 let togglesharing = document.querySelector('.toggleSharing');
 let body = document.querySelector('body');
 let cowork = document.getElementById('cowork');
-let hidden = document.querySelector('.hidden');
-let chevron = document.querySelector('.fa-solid fa-chevron-right')
+let coworkingSpace = document.querySelector('.coworkingSpace');
+let servicesDeroulant = document.querySelector('.servicesDeroulant');
+let servicesMenu = document.querySelector('#servicesMenu');
 
 toggle.addEventListener('click', function() {
     body.classList.toggle('open');
 })
 
 cowork.addEventListener('mouseover', function () {
-  hidden.style.display = "initial";
-  chevron.style.transform = "rotate(180deg)";
+  coworkingSpace.style.display = "initial";
 })
 cowork.addEventListener('mouseleave', function () {
-  hidden.style.display = "none";
+  coworkingSpace.style.display = "none";
 })
-hidden.addEventListener('mouseover', function () {
-  hidden.style.display = "initial"
+coworkingSpace.addEventListener('mouseover', function () {
+  coworkingSpace.style.display = "initial";
+})
+servicesMenu.addEventListener('mouseover', function () {
+  servicesDeroulant.style.display = "initial";
+})
+servicesMenu.addEventListener('mouseleave', function () {
+  servicesDeroulant.style.display = "none";
+})
+servicesDeroulant.addEventListener('mouseover', function () {
+  servicesDeroulant.style.display = "initial";
 })
