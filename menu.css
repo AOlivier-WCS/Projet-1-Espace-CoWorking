@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  position: absolute;
+   position: relative;
   width: 100%;
   height: 12vh;
   top: 0;
@@ -66,18 +66,16 @@ nav {
   border-radius: 20px;
 }
 
-/* Menu en hover */
-
 .coworkingSpace {
   padding: 20px 0;
   position: absolute;
   left: 22%;
-  top: 95%;
+  top: 110%;
   display: none;
   width: 250px;
   box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
   background-color: aliceblue;
-  z-index: 2;
+  border-radius: 10%;
 }
 
 .coworkingSpace ul {
@@ -89,10 +87,12 @@ nav {
   padding: 20px 0;
   position: absolute;
   left: 42%;
-  top: 95%;
+  top: 110%;
   display: none;
   width: 200px;
   box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
+  background-color: aliceblue;
+  border-radius: 10%;
 }
 
 .servicesDeroulant ul {
@@ -104,8 +104,6 @@ nav {
   padding: 20px;
 }
 
-@media all and (max-width: 991px) {
-
   header {
       background: transparent;
   }
@@ -115,12 +113,12 @@ nav {
       font-size: 2rem;
       cursor: pointer;
       position: relative;
-      z-index: 2;
+      z-index: 1;
   }
 
   .logo {
       position: relative;
-      z-index: 2;
+      z-index: 1;
   }
 
   .ouvrir {
@@ -147,17 +145,15 @@ nav {
       height: 100vh;
       background: lightgray;
       flex-direction: column;
-      padding: 2rem;
+      padding: 1rem;
       justify-content: space-around;
       transform: translateX(-100%);
       transition: transform 1s;
-      z-index: 3;
   }
 
 
   .menu li a {
       font-size: 1.5rem;
-      z-index: 3;
   }
 
   .btn {
@@ -167,4 +163,15 @@ nav {
   .open .menu {
       transform: translateX(0);
   }
-}
+
+  .servicesDeroulant {
+    position: absolute;
+    top: 40%;
+  }
+
+  .coworkingSpace {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  } 
+  */

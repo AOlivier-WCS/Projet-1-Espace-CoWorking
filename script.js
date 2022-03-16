@@ -9,7 +9,7 @@ let servicesMenu = document.querySelector('#servicesMenu');
 toggle.addEventListener('click', function() {
     body.classList.toggle('open');
 })
-
+// version desktop 
 cowork.addEventListener('mouseover', function () {
   coworkingSpace.style.display = "initial";
 })
