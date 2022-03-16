@@ -66,6 +66,44 @@ nav {
   border-radius: 20px;
 }
 
+/* Menu en hover */
+
+.coworkingSpace {
+  padding: 20px 0;
+  position: absolute;
+  left: 22%;
+  top: 95%;
+  display: none;
+  width: 250px;
+  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
+  background-color: aliceblue;
+  z-index: 2;
+}
+
+.coworkingSpace ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.servicesDeroulant {
+  padding: 20px 0;
+  position: absolute;
+  left: 42%;
+  top: 95%;
+  display: none;
+  width: 200px;
+  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
+}
+
+.servicesDeroulant ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+#cowork {
+  padding: 20px;
+}
+
 @media all and (max-width: 991px) {
 
   header {
@@ -77,12 +115,12 @@ nav {
       font-size: 2rem;
       cursor: pointer;
       position: relative;
-      z-index: 1;
+      z-index: 2;
   }
 
   .logo {
       position: relative;
-      z-index: 1;
+      z-index: 2;
   }
 
   .ouvrir {
@@ -113,11 +151,13 @@ nav {
       justify-content: space-around;
       transform: translateX(-100%);
       transition: transform 1s;
+      z-index: 3;
   }
 
 
   .menu li a {
       font-size: 1.5rem;
+      z-index: 3;
   }
 
   .btn {
@@ -127,46 +167,4 @@ nav {
   .open .menu {
       transform: translateX(0);
   }
-}
-
-/* Menu en hover */
-
-.coworkingSpace {
-  padding: 20px 0;
-  position: absolute;
-  left: 22%;
-  top: 50%;
-  display: none;
-  width: 250px;
-  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
-}
-
-.coworkingSpace ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-.servicesDeroulant {
-  padding: 20px 0;
-  position: absolute;
-  left: 42%;
-  top: 50%;
-  display: none;
-  width: 200px;
-  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
-}
-
-.servicesDeroulant ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-#cowork {
-  padding: 20px;
-}
-
-h1 {
-position: absolute;
-top: 40%;
-left: 10%;
 }
