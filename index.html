@@ -3,12 +3,54 @@
 <meta charset="UTF-8">
 <title>Sharing is Caring</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<script src="https://kit.fontawesome.com/ba4aa7b2ec.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="media.css">
-
+<link rel="stylesheet" href="menu.css">
 <body>
+
+                 
+
 <header>
-    <img src="img/logo.png" alt="logoSC">
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="#home" class="active"><img src="img/logo.png" alt="logoSC" width="80" height="80"></a>
+    </div>
+    <!--  burger  -->
+    <!--  logo ouvert / fermé -->
+    <div class="toggle">
+      <i class="fas fa-bars ouvrir"></i>
+      <i class="fas fa-times fermer"></i>
+    </div>
+    <ul class="menu">
+      <!--  onglets -->
+      <li id="cowork"><a href="#">Coworking space </a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <div class="hidden">
+          <ul>
+            <li><a href="privateOffice.html">Nos bureaux privés</a></li>
+            <li><a href="#">Nos bureaux partagés</a></li>
+            <li><a href="meetingRoom.html">Nos salles de réunion</a></li>
+            <li><a href="domiciliation.html">Domiciliation</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#">Nos services </a><i class="fa-solid fa-chevron-down"></i></li>
+      <li><a href="aboutUs.html">Notre communauté </a><i class="fa-solid fa-chevron-down"></i></li>
+      <li><a href="#">Contact </a><i class="fa-solid fa-chevron-down"></i></li>
+      <li><button class="btn">Réserver</button></li>
+    </ul>
+  </nav>
 </header>
+
+<!-- fin barre navigation -->
+
+
+
+
+
 </body>
+<script src="script.js"></script>
 </html>
