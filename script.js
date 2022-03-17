@@ -28,3 +28,32 @@ servicesMenu.addEventListener('mouseleave', function () {
 servicesDeroulant.addEventListener('mouseover', function () {
   servicesDeroulant.style.display = "initial";
 })
+
+// version mobile
+
+// cowork.addEventListener('click', function () {
+//   if (coworkingSpace.style.display === "none"){
+//   coworkingSpace.style.display = "initial";} else {
+//     coworkingSpace.style.display = "none"
+
+//   }
+// })
+// cowork.addEventListener('click', function () {
+//   coworkingSpace.style.display = "none";
+// })
+// coworkingSpace.addEventListener('click', function () {
+//   coworkingSpace.style.display = "initial";
+// })
+
+// servicesMenu.addEventListener('click', function () {
+//   if (servicesDeroulant.style.display === "initial") {
+//     coworkingSpace.style.display = "none" } else {
+//       coworkingSpace.style.display = "initial"
+//     }
+// })
+// servicesMenu.addEventListener('click', function () {
+//   servicesDeroulant.style.display = "none";
+// })
+// servicesDeroulant.addEventListener('click', function () {
+//   servicesDeroulant.style.display = "initial";
+// })
