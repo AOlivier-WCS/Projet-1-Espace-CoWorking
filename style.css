@@ -94,6 +94,76 @@ h1 span {
     padding-bottom: 1rem;
     text-decoration: underline;
 }
+
+body {
+    margin: 0;
+}
+
+.noHeaderNoFooter {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section {
+    width: 90%;
+}
+
+.joinUs {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-container, .noHeaderNoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.deco {
+    width: 80%;
+    height: auto;
+}*/
+
+
+
+footer {
+    width: 100;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.footer-community, .footer-info {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footer-community {
+    background-color:#ffb703;
+}
+
+.footer-community ul {
+    list-style-type:none;
+    display:grid;
+    grid-template-columns: 70% auto;
+    padding-inline-start: 0;
+}
+
+.footer-community li {
+    margin-right: 10px;
+}
+
+.footer-info {
+    background-color: #023047;
+    color:#ffb703;
+}
+
+.footer-info p {
+    margin: 5px 0px 5px;
+=======
     
 #bureauPrivatif {
     margin: 70px 10% 0 10%;
