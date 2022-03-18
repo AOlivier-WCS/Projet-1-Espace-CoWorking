@@ -1,9 +1,9 @@
-:root {
+/* :root {
     --bleuclair : #8ecae6;
     --mainColor : #023047;
     --jaune : #ffb703;
     --orange : #fb8500;
-}
+} */
 
 nav {
     display: flex;
@@ -17,11 +17,11 @@ ul li {
 
  ul a {
      text-decoration: none;
-     color: var(--mainColor);
+     color: var(--secondaryColor);
  }
  .btn {
     border: 0;
-    background: var(--jaune);
+    background: var(--mainColor);
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
