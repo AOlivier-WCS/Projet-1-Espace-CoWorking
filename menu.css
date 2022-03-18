@@ -133,9 +133,6 @@ nav {
 
 .coworkingSpace {
   padding: 20px 0;
-  position: absolute;
-  left: 22%;
-  top: 50%;
   display: none;
   width: 250px;
   box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
@@ -148,9 +145,6 @@ nav {
 
 .servicesDeroulant {
   padding: 20px 0;
-  position: absolute;
-  left: 42%;
-  top: 50%;
   display: none;
   width: 200px;
   box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
@@ -161,12 +155,5 @@ nav {
   padding-left: 5px;
 }
 
-#cowork {
-  padding: 20px;
-}
 
-h1 {
-position: absolute;
-top: 40%;
-left: 10%;
-}
+
