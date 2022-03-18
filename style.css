@@ -14,17 +14,85 @@
     font-family: sans-serif;
 }
 
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 h1 {
-    font-size: 3 rem;
+    font-size: 4rem;
 }
 h2 {
-    font-size: 2 rem;
+    font-size: 2rem;
 }
 h3 {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
 }
 h4 {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
+}
+    
+nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle {
+    font-size: 3rem;
+}
+
+.button-style {
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 40%;
+    border-radius: 60px;
+    background-color:var(--secondaryColor);
+    color: white;
+}
+
+/* Welcome */
+
+main h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-family: var(--PoliceFamily);
+    font-weight: 400;
+    padding-left: 2rem;
+}
+
+h1 span {
+    background-color: var(--mainColor);
+}
+
+.welcome-container {
+    display: flex;
+}
+
+.welcome-container span {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+}
+
+.research-container {
+    background-color: rgba(5, 48, 71, 0.15);
+    color: black;
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.research-container span {
+    padding-bottom: 1rem;
+    text-decoration: underline;
 }
     
 #bureauPrivatif {
@@ -58,3 +126,53 @@ h4 {
       max-width: 50px;
       max-height: 50px;
   }
+
+/* Prestations */
+
+
+.style-container {
+    background-color: rgba(5, 48, 71, 0.15);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.style-container img {
+    max-width: 100%;
+    height: 30vh;
+    border-radius: 7%;
+}
+
+.style-container *{
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.discover{
+display: flex;
+justify-content: right;
+width: 100%;
+padding-bottom: 1rem;
+}
+
+.discover span {
+    padding: 0.5rem;
+    padding-top: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.flex-container img {
+    width: 30vh;
+    height: 30vh;
+}
