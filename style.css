@@ -11,6 +11,7 @@
 
     html {
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -26,3 +27,34 @@ h4 {
     font-size: 1.2 rem;
 }
     
+#bureauPrivatif {
+    margin: 70px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#boutonEnsavoir {
+    border: 0;
+    background: var(--secondaryColor);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  #titreBureauPrivatif {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  #titreBureauPrivatif h1 {
+      margin-top: 0px;
+  }
+  #bureauPrivatif p {
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+
+  #logoBureau {
+      max-width: 50px;
+      max-height: 50px;
+  }
