@@ -61,10 +61,6 @@ ul li {
     font-size: 1.5rem;
 }
 
-.btn {
-    font-size: 1rem;
-}
-
 .open .menu {
     transform: translateX(0);
 }
@@ -76,9 +72,10 @@ ul li {
 }
 
 .coworkingSpace ul {
-background-color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255, 0.9);
 z-index: 3;
 margin: 5px;
+position: relative;
 }
 
 
