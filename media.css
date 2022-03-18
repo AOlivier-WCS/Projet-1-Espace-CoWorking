@@ -4,6 +4,19 @@ nav {
     height: 5vh;
 }
 
+.logo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.toggle {
+    font-size: 3rem;
+    margin-right: 10%;
+    z-index: 2;
+    margin-left: 70%;
+    margin-top: 5%;
+}
+
 ul li {
     list-style: none;
 }
@@ -58,11 +71,6 @@ ul li {
     transform: translateX(0);
 }
 
-.toggle {
-    z-index: 2;
-    margin-left: 70%;
-    margin-top: 5%;
-}
 
 .coworkingSpace ul {
 background-color: rgba(255, 255, 255, 0.9);
