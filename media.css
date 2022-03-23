@@ -222,9 +222,9 @@ position: relative;
         width: 95%;
     }
 
-    .footer-community {
+    /* .footer-community {
         
-    }
+    } */
 
     .footer-menu {
         display: flex;
@@ -236,4 +236,4 @@ position: relative;
 
     .footer-menu a {
         color: var(--mainColor);
-    }
+    }}
