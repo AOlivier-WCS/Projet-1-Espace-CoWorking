@@ -14,10 +14,7 @@
     font-family: sans-serif;
 }
 
-/* body {
-    margin-left: 5%;
-    margin-right: 5%;
-} */
+
 
 h1 {
     font-size: 4rem;
@@ -39,7 +36,7 @@ nav {
     justify-content: space-between;
 }
 
-.button-style {
+/* .button-style {
     padding: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -48,7 +45,7 @@ nav {
     border-radius: 60px;
     background-color:var(--secondaryColor);
     color: white;
-}
+} */
 
 /* Welcome */
 
@@ -89,10 +86,6 @@ h1 span {
 .research-container span {
     padding-bottom: 1rem;
     text-decoration: underline;
-}
-
-body {
-    margin: 0;
 }
 
 .noHeaderNoFooter {
@@ -138,7 +131,7 @@ footer {
 }
 
 .footer-community {
-    background-color:#ffb703;
+    background-color: var(--mainColor);
 }
 
 .footer-community ul {
@@ -152,13 +145,26 @@ footer {
     margin-right: 10px;
 }
 
-.footer-info {
+.footer-info, .footer-menu {
     background-color: #023047;
-    color:#ffb703;
+    color: var(--mainColor);
 }
 
-.footer-info p {
-    margin: 5px 0px 5px;}
+.footer-info p, .footer-menu p {
+    margin: 5px 0px 5px;
+}
+
+/*.footer-menu {
+    padding-right: 10%;
+}*/
+
+.mobile-hidden {
+    display:none;
+    width: 100%;
+    height: 100%;
+}
+
+/*End footer*/
     
 /* Bureaux privatifs */
 
