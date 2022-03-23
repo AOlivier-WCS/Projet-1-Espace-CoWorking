@@ -1,26 +1,18 @@
-.order{
+.relaxation{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.order h1{ 
-    display: flex;
-    flex-wrap: wrap;
-    width: 150px;
-    justify-content: center;
-}
-
-.order P{
-    margin-top: 25px;
+.relaxation p{
     width: 30vh;
 }
-#reservation{
+#button{
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
-#reservation input{
+#button input{
     width: 100px;
     color: aliceblue;
     width: 196px;

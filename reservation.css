@@ -18,6 +18,7 @@
 .form-contact{
     display: flex;
     flex-direction: column;
+    width: 90%;
 
 }
 .formu{
@@ -68,10 +69,95 @@ form{
 .card{
     display: flex;
     justify-content: center;
-    background-color: aqua;
 }
 iframe{
     height: 40vh;
     width: 40vh;
+
+}
+.socialMedia{
+    display:none;
+}
+.socialMedia i{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+p.start{
+    display: none;
+}
+
+@media screen and (min-width: 650px) {
+    
+    .contact{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 20px 40px 1fr;
+        column-gap: 10px;
+        row-gap: 15px;
+
+    }
+    .socialMedia{
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 2;
+        grid-row-start: 2; 
+    }
+    .social{
+        display: flex;
+        justify-content: space-around;
+    } 
+    .contact>.start{
+        grid-column-start:1;
+        grid-row-start:1;
+        display: flex;
+    }
+    h2.start{
+        justify-self: center;
+        height: 110px;
+        font-size: 70px;
+    }
+    #button{
+        grid-column-start: 1;
+        grid-row-start: 5;
+        justify-content: flex-end;
+    }
+    p.start{
+        justify-self: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    .card{
+        display: block;
+        width: 100%;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    iframe{
+        height: 60vh;
+        width: 100vh;
+        border-radius: 20px;
+    
+    }
+    .contact h1{
+        grid-column-start:1;
+        grid-row-start:3;
+    }
+    .form-contact{
+        grid-column: 3 / span 2;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-row-start: 5;
+        justify-self: start; 
+    }
+    /* #secondName, #name, #message {
+        width: 150vh;
+        
+    } */
+    .contact p{
+        grid-column-start: 1;
+        grid-row-start: 3;
+        gap: 40px 60px;
+    }
 
 }
