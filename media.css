@@ -33,9 +33,14 @@ ul li {
  .btn {
     border: 0;
     background: var(--mainColor);
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+  }
+
+  .btn:hover {
+      background-color: var(--secondaryColor);
+      color: var(--mainColor);
   }
   
 .ouvrir {
@@ -88,8 +93,7 @@ position: relative;
     width: 100%;
 }
 
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 550px) {
 
     .menu {
         position: revert;
@@ -114,69 +118,88 @@ position: relative;
         width: 100%;
     }
 
-    ul, li, a {
-        list-style: none;
-        text-decoration: none;
-    }
-
     .toggle {
         display: none;
-    }
-
-    img {
-        width: 150px;
-        height: 150px;
     }
 
     #logoBureau {
         display: none;
     }
     
-    .imagesAlex {
+   .imagesAlex {
         display: initial;
-        width: 30%;
-        height: 10%;
-        left: 77px;
-        top: 334px;
+        grid-column-start: 1;
+       grid-row-start: 1;
+       grid-column-end: 3;
+       grid-row-end: 3;
+       max-width: 550px;
     }
 
-    /*footer {
-        display: none;
-    }*/
+    .pagesAlex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 
-    .titreAlex h2 {
-        max-height: 50px;
-        margin-left: 20%;
+    
+
+   .titreAlex {
+       grid-column-start: 3;
+       grid-row-start: 1;
+       grid-column-end: 5;
+       grid-row-end: 2;
+       text-align: center;
+       justify-content: center;
     }
 
     .p1 {
-        width: 15%;
-        height: 20%;
-        position: absolute;
-        left: 30%;
-        top: 40%;
+       /* grid-column-start: 3;
+       grid-row-start: 2;
+       grid-column-end: 4;
+       grid-row-end: 3; */
+       grid-area: 2 / 3 / 3 / 4;
+       margin: -70px;
+       max-width: 200px;
     }
     .p2 {
-        width: 20%;
-        height: 20%;
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        font-weight: 600;
+        grid-column-start: 4;
+       grid-row-start: 2;
+       grid-column-end: 5;
+       grid-row-end: 3;
+       font-weight: 550;
     }
-    /* .pagesAlex {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-    } */
+
     .p3 {
-        display: none;
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-column-end: 5;
+        grid-row-end: 3;
+        margin-top: 25%;
+        font-weight: 550;
     }
+
     .button-reserverSalle {
-        max-width: 150px;
-        position: absolute;
-        top: 65%;
-        left: 25%;
+        grid-column-start: 3;
+       grid-row-start: 3;
+       grid-column-end: 4;
+       grid-row-end: 4;
+       max-height: 50px;
+       margin-top: -50px;
+       font-size: 1.2rem;
     }
+
+    .button-reserverSalle:hover {
+        background-color: var(--mainColor);
+        color: var(--secondaryColor);
+    }
+ 
+    footer {
+        display: none;
+    }*/
+
+    /* test boutons */
+
+
 
     /*Footer*/
 
@@ -222,5 +245,3 @@ position: relative;
     .footer-menu a {
         color: var(--mainColor);
     }
-
-}

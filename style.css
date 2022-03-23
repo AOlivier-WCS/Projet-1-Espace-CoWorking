@@ -45,7 +45,7 @@ nav {
     justify-content: space-between;
 }
 
-.button-style {
+/* .button-style {
     padding: 1.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -54,7 +54,7 @@ nav {
     border-radius: 60px;
     background-color:var(--secondaryColor);
     color: white;
-}
+} */
 
 /* Welcome */
 
