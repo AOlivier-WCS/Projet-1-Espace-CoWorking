@@ -14,16 +14,7 @@
     font-family: sans-serif;
 }
 
-/* We have already: body {margin: 0;} & .noHeaderNoFooter {margin-left: 5%; margin-right: 5%;} */
 
-/*body {
-    margin-left: 5%;
-    margin-right: 5%;
-}*/
-
-body {
-    margin: 0;
-}
 
 h1 {
     font-size: 4rem;
