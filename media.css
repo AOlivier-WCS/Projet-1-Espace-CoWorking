@@ -84,8 +84,12 @@ margin: 5px;
 position: relative;
 }
 
+.desktop-hidden {
+    width: 100%;
+}
 
-@media screen and (min-width: 390px) {
+
+@media screen and (min-width: 700px) {
 
     .menu {
         position: revert;
@@ -98,6 +102,11 @@ position: relative;
 
     .logo {
         margin: 15px 15px;
+    }
+
+    .soc-logo {
+        max-width: fit-content;
+        height: auto;
     }
 
     nav {
@@ -131,9 +140,9 @@ position: relative;
         top: 334px;
     }
 
-    footer {
+    /*footer {
         display: none;
-    }
+    }*/
 
     .titreAlex h2 {
         max-height: 50px;
@@ -168,4 +177,50 @@ position: relative;
         top: 65%;
         left: 25%;
     }
+
+    /*Footer*/
+
+    .mobile-hidden {
+        display:block;
+    }
+    
+    .mobile-hidden, .footer-info, .footer-community, .footer-menu {
+        height:100%;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+    footer {
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-info {
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    .footer-info, .footer-menu {
+        width: 95%;
+    }
+
+    .footer-community {
+        
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5%;
+
+    }
+
+    .footer-menu a {
+        color: var(--mainColor);
+    }
+
 }
