@@ -11,18 +11,242 @@
 
     html {
     font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 h1 {
-    font-size: 3 rem;
+    font-size: 4rem;
 }
 h2 {
-    font-size: 2 rem;
+    font-size: 2rem;
 }
 h3 {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
 }
 h4 {
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
 }
     
+nav {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-style {
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 40%;
+    border-radius: 60px;
+    background-color:var(--secondaryColor);
+    color: white;
+}
+
+/* Welcome */
+
+main h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    font-family: var(--PoliceFamily);
+    font-weight: 400;
+    padding-left: 2rem;
+}
+
+h1 span {
+    background-color: var(--mainColor);
+}
+
+.welcome-container {
+    display: flex;
+}
+
+.welcome-container span {
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+}
+
+.research-container {
+    background-color: rgba(5, 48, 71, 0.15);
+    color: black;
+    width: 80%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.research-container span {
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+}
+
+.noHeaderNoFooter {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section {
+    width: 90%;
+}
+
+.joinUs {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-container, .noHeaderNoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.deco {
+    width: 80%;
+    height: auto;
+}*/
+
+
+
+footer {
+    width: 100;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.footer-community, .footer-info {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.footer-community {
+    background-color:#ffb703;
+}
+
+.footer-community ul {
+    list-style-type:none;
+    display:grid;
+    grid-template-columns: 70% auto;
+    padding-inline-start: 0;
+}
+
+.footer-community li {
+    margin-right: 10px;
+}
+
+.footer-info {
+    background-color: #023047;
+    color:#ffb703;
+}
+
+.footer-info p {
+    margin: 5px 0px 5px;}
+    
+/* Bureaux privatifs */
+
+.pagesAlex {
+    margin: 70px 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-reserverSalle {
+    padding: 10px 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2rem;
+    border-radius: 60px;
+    background-color:var(--secondaryColor);
+    color: white;
+}
+
+  .titreAlex {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .titreAlex h1 {
+      margin-top: 0px;
+  }
+
+  .pagesAlex p {
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+
+  #logoBureau {
+      margin-top: 8%;
+      max-width: 50px;
+      max-height: 50px;
+  }
+
+  .imagesAlex {
+      display: none;
+  }
+
+/* Prestations */
+
+
+.style-container {
+    background-color: rgba(5, 48, 71, 0.15);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.style-container img {
+    max-width: 100%;
+    height: 30vh;
+    border-radius: 7%;
+}
+
+.style-container *{
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.discover{
+display: flex;
+justify-content: right;
+width: 100%;
+padding-bottom: 1rem;
+}
+
+.discover span {
+    padding: 0.5rem;
+    padding-top: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.flex-container img {
+    width: 30vh;
+    height: 30vh;
+}

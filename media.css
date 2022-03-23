@@ -1,3 +1,171 @@
-@media screen and (min-width: 650px) {
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+}
 
+.logo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.logo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.toggle {
+    font-size: 3rem;
+    margin-right: 10%;
+    z-index: 2;
+    margin-left: 60%;
+    margin-top: 5%;
+}
+
+ul li {
+    list-style: none;
+}
+
+ ul a {
+     text-decoration: none;
+     color: var(--secondaryColor);
+     
+ }
+ .btn {
+    border: 0;
+    background: var(--mainColor);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+.ouvrir {
+    display: flex;
+}
+
+.fermer {
+    display: none;
+}
+
+.open .ouvrir {
+    display: none;
+}
+
+.open .fermer {
+    display: flex;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    transform: translateX(-100%);
+    transition: transform 1s;
+    background-color: white;
+}
+
+.menu li a {
+    font-size: 1.5rem;
+}
+
+.open .menu {
+    transform: translateX(0);
+}
+
+
+.coworkingSpace ul {
+background-color: rgba(255, 255, 255, 0.9);
+z-index: 3;
+margin: 5px;
+position: relative;
+}
+
+
+@media screen and (min-width: 390px) {
+
+    .menu {
+        position: revert;
+        height: revert;
+        transform: revert;
+        transition: revert;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .logo {
+        margin: 15px 15px;
+    }
+
+    nav {
+        height: 150px;
+        width: 100%;
+    }
+
+    ul, li, a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #logoBureau {
+        display: none;
+    }
+    
+    .imagesAlex {
+        display: initial;
+        width: 30%;
+        height: 10%;
+        left: 77px;
+        top: 334px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .titreAlex h2 {
+        max-height: 50px;
+        margin-left: 20%;
+    }
+
+    .p1 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        left: 30%;
+        top: 40%;
+    }
+    .p2 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        font-weight: 600;
+    }
+    /* .pagesAlex {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    } */
+    .p3 {
+        display: none;
+    }
+    .button-reserverSalle {
+        max-width: 150px;
+        position: absolute;
+        top: 65%;
+        left: 25%;
+    }
 }
