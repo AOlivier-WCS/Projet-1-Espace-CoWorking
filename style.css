@@ -160,36 +160,46 @@ footer {
 .footer-info p {
     margin: 5px 0px 5px;}
     
-#bureauPrivatif {
+/* Bureaux privatifs */
+
+.pagesAlex {
     margin: 70px 10% 0 10%;
     display: flex;
     flex-direction: column;
 }
 
-#boutonEnsavoir {
-    border: 0;
-    background: var(--secondaryColor);
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-  }
+.button-reserverSalle {
+    padding: 10px 10px;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 2rem;
+    border-radius: 60px;
+    background-color:var(--secondaryColor);
+    color: white;
+}
 
-  #titreBureauPrivatif {
+  .titreAlex {
       display: flex;
       justify-content: flex-start;
   }
 
-  #titreBureauPrivatif h1 {
+  .titreAlex h1 {
       margin-top: 0px;
   }
-  #bureauPrivatif p {
+
+  .pagesAlex p {
       margin-left: 10%;
       margin-right: 10%;
   }
 
   #logoBureau {
+      margin-top: 8%;
       max-width: 50px;
       max-height: 50px;
+  }
+
+  .imagesAlex {
+      display: none;
   }
 
 /* Prestations */
@@ -229,7 +239,6 @@ padding-bottom: 1rem;
     padding: 0.5rem;
     padding-top: 0;
 }
-
 
 .flex-container {
     display: flex;
