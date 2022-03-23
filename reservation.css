@@ -12,9 +12,7 @@
 }
 .contact p{
     font-size: 10px;
-    width: 30vh;
     margin-top: 50px;
-    margin-left: 20px;
     font-family: var(--PoliceFamily);
 }
 .form-contact{
@@ -89,7 +87,7 @@ p.start{
     .contact{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr 1fr 20vh;
+        grid-template-rows: 0.5fr 1fr 1fr ;
         column-gap: 10px;
         row-gap: 15px;
 
@@ -100,7 +98,20 @@ p.start{
         grid-column-start: 2;
         grid-row-start: 2;
         margin-left: 40px; 
-
+        
+    }
+    /* .contact h1{
+        justify-content: flex-start;
+        margin-left: 100px;
+        
+    } */
+    .contact h1{
+        grid-column-start:1;
+        grid-row-start:3;
+        height: 35px;
+        justify-content: flex-start;
+        margin: 0;
+        align-self: start;
     }
     .social{
         display: flex;
@@ -122,7 +133,6 @@ p.start{
     }
     h2.start{
         justify-self: center;
-        /* height: 110px; */
         font-size: 3rem;
     }
     #button{
@@ -151,15 +161,12 @@ p.start{
         border-radius: 20px;
     
     }
-    .contact h1{
-        grid-column-start:1;
-        grid-row-start:3;
-        height: 35px;
-        margin: 0;
-        align-self: start;
-    }
     .contact h2{
         margin: 0;
+    }
+    form{
+        margin-top: 150px;
+        padding-bottom: 100px;
     }
     .form-contact{
         grid-column-start: 1;
@@ -174,11 +181,11 @@ p.start{
     #secondName, #name, #message {
         width: 96%;
     }
-    #text{
+    #text {
         font-size: 0.8rem;
         grid-column-start:1;
         grid-row-start:3;
         height: 50px;
-        justify-self: start;
+        justify-self: normal;
         align-self: start;
     }
