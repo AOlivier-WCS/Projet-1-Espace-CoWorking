@@ -6,54 +6,60 @@
 <script src="https://kit.fontawesome.com/ba4aa7b2ec.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="media.css">
-<link rel="stylesheet" href="menu.css">
+<!-- <link rel="stylesheet" href="menu.css"> -->
+<link rel="stylesheet" href="espaceDetente.css">
 <body>
-<header>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <a href="#home" class="active"><img src="img/logo.png" alt="logoSC" width="80" height="80"></a>
-    </div>
-    <!--  burger  -->
-    <!--  logo ouvert / fermé -->
-    <div class="toggle">
-      <i class="fas fa-bars ouvrir"></i>
-      <i class="fas fa-times fermer"></i>
-    </div>
-    <ul class="menu">
-      <!--  onglets -->
-      <li id="cowork"><a href="#">Coworking space </a>
-        <i class="fa-solid fa-chevron-down"></i>
-        <div class="coworkingSpace">
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <a href="index.html" class="active"><img src="img/logo.png" alt="logoSC"></a>
+      </div>
+      <!--  burger  -->
+      <!--  logo ouvert / fermé -->
+      <div class="toggle">
+  
+        <i id="burger" class="fas fa-bars ouvrir"></i>
+        <i id="croix" class="fas fa-times fermer"></i>
+      </div>
+      <ul class="menu">
+         <!-- onglets -->
+        <li id="cowork"><a href="#">Coworking space </a>
+          <i class="fa-solid fa-chevron-down"></i>
+          <div class="coworkingSpace">
+            <ul>
+              <li><a href="privateOffice.html">Nos bureaux privés</a></li>
+              <li><a href="sharedOffice.html">Nos bureaux partagés</a></li>
+              <li><a href="meetingRoom.html">Nos salles de réunion</a></li>
+              <li><a href="domiciliation.html">Domiciliation</a></li>
+            </ul>
+          </div>
+        </li>
+        <li id="servicesMenu"><a href="#">Nos services</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        <div class="servicesDeroulant">
           <ul>
-            <li><a href="privateOffice.html">Nos bureaux privés</a></li>
-            <li><a href="sharedOffice.html">Nos bureaux partagés</a></li>
-            <li><a href="meetingRoom.html">Nos salles de réunion</a></li>
-            <li><a href="domiciliation.html">Domiciliation</a></li>
+            <li><a href="restauration.html">Restauration</a></li>
+            <li><a href="espacesDetente.html">Espace détente</a></li>
           </ul>
         </div>
       </li>
-      <li id="servicesMenu"><a href="#">Nos services</a>
-        <i class="fa-solid fa-chevron-down"></i>
-      <div class="servicesDeroulant">
-        <ul>
-          <li><a href="restauration.html">Restauration</a></li>
-          <li><a href="espacesDetente.html">Espace détente</a></li>
-        </ul>
-      </div>
-    </li>
-      <li><a href="aboutUs.html">Notre communauté </a></li>
-      <li><a href="contact.html">Contact </a></li>
-      <li><button class="btn"><a href="reservation.html">Réservation</a></button></li>
-    </ul>
-  </nav>
-</header>
+        <li><a href="aboutUs.html">Notre communauté </a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li><button class="btn" onclick="window.location.href='reservation.html'">Réservation</button></li>
+      </ul>
+    </nav>
+  </header>
 <!-- fin barre navigation -->
-
-
-
-
-
+<article class="relaxation">
+  <h1>espace detente</h1>
+  <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! </p>
+  <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! </p>
+  <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! </p>
+  <div id="button">
+    <input type="submit" value="reserver votre salle">
+  </div>
+</article>
 </body>
 <script src="script.js"></script>
 </html>

@@ -1,14 +1,24 @@
-:root {
-    --bleuclair : #8ecae6;
-    --mainColor : #023047;
-    --jaune : #ffb703;
-    --orange : #fb8500;
-}
-
 nav {
     display: flex;
     flex-direction: row;
     height: 5vh;
+}
+
+.logo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.logo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.toggle {
+    font-size: 3rem;
+    margin-right: 10%;
+    z-index: 2;
+    margin-left: 60%;
+    margin-top: 5%;
 }
 
 ul li {
@@ -17,14 +27,20 @@ ul li {
 
  ul a {
      text-decoration: none;
-     color: var(--mainColor);
+     color: var(--secondaryColor);
+     
  }
  .btn {
     border: 0;
-    background: var(--jaune);
-    font-size: 1rem;
+    background: var(--mainColor);
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+  }
+
+  .btn:hover {
+      background-color: var(--secondaryColor);
+      color: var(--mainColor);
   }
   
 .ouvrir {
@@ -65,11 +81,6 @@ ul li {
     transform: translateX(0);
 }
 
-.toggle {
-    z-index: 2;
-    margin-left: 70%;
-    margin-top: 5%;
-}
 
 .coworkingSpace ul {
 background-color: rgba(255, 255, 255, 0.9);
@@ -78,8 +89,11 @@ margin: 5px;
 position: relative;
 }
 
+.desktop-hidden {
+    width: 100%;
+}
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 550px) {
 
     .menu {
         position: revert;
@@ -90,24 +104,144 @@ position: relative;
         grid-template-columns: repeat(5, 1fr);
     }
 
+    .logo {
+        margin: 15px 15px;
+    }
+
+    .soc-logo {
+        max-width: fit-content;
+        height: auto;
+    }
 
     nav {
         height: 150px;
         width: 100%;
     }
 
-    ul, li, a {
-        list-style: none;
-        text-decoration: none;
-    }
-
     .toggle {
         display: none;
     }
 
-    img {
-        width: 150px;
-        height: 150px;
+    #logoBureau {
+        display: none;
+    }
+    
+   .imagesAlex {
+        display: initial;
+        grid-column-start: 1;
+       grid-row-start: 1;
+       grid-column-end: 3;
+       grid-row-end: 3;
+       max-width: 550px;
     }
 
-}
+    .pagesAlex {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    
+
+   .titreAlex {
+       grid-column-start: 3;
+       grid-row-start: 1;
+       grid-column-end: 5;
+       grid-row-end: 2;
+       text-align: center;
+       justify-content: center;
+    }
+
+    .p1 {
+       /* grid-column-start: 3;
+       grid-row-start: 2;
+       grid-column-end: 4;
+       grid-row-end: 3; */
+       grid-area: 2 / 3 / 3 / 4;
+       margin: -70px;
+       max-width: 200px;
+    }
+    .p2 {
+        grid-column-start: 4;
+       grid-row-start: 2;
+       grid-column-end: 5;
+       grid-row-end: 3;
+       font-weight: 550;
+    }
+
+    .p3 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        grid-column-end: 5;
+        grid-row-end: 3;
+        margin-top: 25%;
+        font-weight: 550;
+    }
+
+    .button-reserverSalle {
+        grid-column-start: 3;
+       grid-row-start: 3;
+       grid-column-end: 4;
+       grid-row-end: 4;
+       max-height: 50px;
+       margin-top: -50px;
+       font-size: 1.2rem;
+    }
+
+    .button-reserverSalle:hover {
+        background-color: var(--mainColor);
+        color: var(--secondaryColor);
+    }
+ 
+    footer {
+        display: none;
+    }*/
+
+    /* test boutons */
+
+
+
+    /*Footer*/
+
+    .mobile-hidden {
+        display:block;
+    }
+    
+    .mobile-hidden, .footer-info, .footer-community, .footer-menu {
+        height:100%;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+    footer {
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-info {
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    .footer-info, .footer-menu {
+        width: 95%;
+    }
+
+    .footer-community {
+        
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5%;
+
+    }
+
+    .footer-menu a {
+        color: var(--mainColor);
+    }
