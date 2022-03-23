@@ -7,7 +7,7 @@
 .order h1{ 
     display: flex;
     flex-wrap: wrap;
-    width: 150px;
+    width: 10px;
     justify-content: center;
 }
 
