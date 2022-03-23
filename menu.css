@@ -1,4 +1,4 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,8 +12,8 @@ html {
   font-family: sans-serif;
 } 
 
-header {
-   position: relative;
+ header {
+  
   width: 100%;
   height: 12vh;
   top: 0;
@@ -66,47 +66,8 @@ header {
   border-radius: 20px;
 } 
 
-<<<<<<< HEAD
  @media all and (max-width: 991px) { 
-=======
-.coworkingSpace {
-  padding: 20px 0;
-  position: absolute;
-  left: 22%;
-  top: 110%;
-  display: none;
-  width: 250px;
-  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
-  background-color: aliceblue;
-  border-radius: 10%;
-}
 
-.coworkingSpace ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-.servicesDeroulant {
-  padding: 20px 0;
-  position: absolute;
-  left: 42%;
-  top: 110%;
-  display: none;
-  width: 200px;
-  box-shadow: 0 3px 27px rgb(0 0 0 / 25%);
-  background-color: aliceblue;
-  border-radius: 10%;
-}
-
-.servicesDeroulant ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-#cowork {
-  padding: 20px;
-}
->>>>>>> 7856e9801f18866112d4a6f2581f2fc15c1c4109
 
    header {
       background: transparent;
@@ -149,7 +110,7 @@ header {
       height: 100vh;
       background: lightgray;
       flex-direction: column;
-      padding: 1rem;
+      padding: 2rem;
       justify-content: space-around;
       transform: translateX(-100%);
       transition: transform 1s;
@@ -167,7 +128,6 @@ header {
   .open .menu {
       transform: translateX(0);
   }
-<<<<<<< HEAD
 } 
 
  Menu en hover 
@@ -210,8 +170,7 @@ header {
 position: absolute;
 top: 40%;
 left: 10%;
-}   */
-=======
+*/
 
   .servicesDeroulant {
     position: absolute;
@@ -223,5 +182,4 @@ left: 10%;
     top: 20%;
     left: 5%;
   } 
-  */
->>>>>>> 7856e9801f18866112d4a6f2581f2fc15c1c4109
+

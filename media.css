@@ -1,14 +1,24 @@
-:root {
-    --bleuclair : #8ecae6;
-    --mainColor : #023047;
-    --jaune : #ffb703;
-    --orange : #fb8500;
-}
-
 nav {
     display: flex;
     flex-direction: row;
     height: 5vh;
+}
+
+.logo {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.logo img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.toggle {
+    font-size: 3rem;
+    margin-right: 10%;
+    z-index: 2;
+    margin-left: 60%;
+    margin-top: 5%;
 }
 
 ul li {
@@ -17,11 +27,12 @@ ul li {
 
  ul a {
      text-decoration: none;
-     color: var(--mainColor);
+     color: var(--secondaryColor);
+     
  }
  .btn {
     border: 0;
-    background: var(--jaune);
+    background: var(--mainColor);
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -65,11 +76,6 @@ ul li {
     transform: translateX(0);
 }
 
-.toggle {
-    z-index: 2;
-    margin-left: 70%;
-    margin-top: 5%;
-}
 
 .coworkingSpace ul {
 background-color: rgba(255, 255, 255, 0.9);
@@ -90,6 +96,9 @@ position: relative;
         grid-template-columns: repeat(5, 1fr);
     }
 
+    .logo {
+        margin: 15px 15px;
+    }
 
     nav {
         height: 150px;
@@ -110,4 +119,53 @@ position: relative;
         height: 150px;
     }
 
+    #logoBureau {
+        display: none;
+    }
+    
+    .imagesAlex {
+        display: initial;
+        width: 30%;
+        height: 10%;
+        left: 77px;
+        top: 334px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .titreAlex h2 {
+        max-height: 50px;
+        margin-left: 20%;
+    }
+
+    .p1 {
+        width: 15%;
+        height: 20%;
+        position: absolute;
+        left: 30%;
+        top: 40%;
+    }
+    .p2 {
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        font-weight: 600;
+    }
+    /* .pagesAlex {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    } */
+    .p3 {
+        display: none;
+    }
+    .button-reserverSalle {
+        max-width: 150px;
+        position: absolute;
+        top: 65%;
+        left: 25%;
+    }
 }
