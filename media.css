@@ -89,6 +89,9 @@ margin: 5px;
 position: relative;
 }
 
+.desktop-hidden {
+    width: 100%;
+}
 
 @media screen and (min-width: 550px) {
 
@@ -103,6 +106,11 @@ position: relative;
 
     .logo {
         margin: 15px 15px;
+    }
+
+    .soc-logo {
+        max-width: fit-content;
+        height: auto;
     }
 
     nav {
@@ -187,8 +195,53 @@ position: relative;
  
     footer {
         display: none;
-    }
+    }*/
 
     /* test boutons */
 
-}
+
+
+    /*Footer*/
+
+    .mobile-hidden {
+        display:block;
+    }
+    
+    .mobile-hidden, .footer-info, .footer-community, .footer-menu {
+        height:100%;
+    }
+
+    .desktop-hidden {
+        display: none;
+    }
+
+    footer {
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-info {
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    .footer-info, .footer-menu {
+        width: 95%;
+    }
+
+    .footer-community {
+        
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 5%;
+
+    }
+
+    .footer-menu a {
+        color: var(--mainColor);
+    }
