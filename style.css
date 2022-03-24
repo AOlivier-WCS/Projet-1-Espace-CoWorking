@@ -15,6 +15,14 @@
 }
 
 
+img {
+    max-width: 80%;
+}
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 h1 {
     font-size: 4rem;
@@ -66,10 +74,137 @@ h1 span {
     display: flex;
 }
 
+ .welcome-container ul {
+    display:none;
+} 
+
+
 .welcome-container span {
     padding-top: 1rem;
     padding-right: 0.5rem;
 }
+
+#img-accueil {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+@media screen and (min-width: 700px){
+    .deskstop-container-home{
+        display: grid;
+        grid-template-columns: 45vw 35vw;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    #img-accueil{
+        height: 55vh;
+        width: 35vw;
+    }
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .welcome-container p {
+        width: 85%;
+        padding-left: 2rem;
+    }
+    .welcome-container ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+
+    span {
+        margin-top: 1rem;
+    }
+    .arrow{
+        display: none;
+    }
+    .research-container{
+        visibility: hidden;
+    }
+    .flex-container{
+        width: 80%;
+    }
+    .prestation-title-container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 14rem;
+        margin-right: 14rem;
+
+    }
+    .prestation-title-container p {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin-bottom: 2rem;
+    }
+    .prestation-title-container h2{
+        width: 35%;
+        text-align: center;
+        margin: 0;
+        
+    }
+    .share-container {
+        margin-left: 14rem;
+        margin-right: 14rem;
+        width: 100%;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 35vw 25vw;
+    }
+    
+    .share-space-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+    } 
+    
+    .private-container {
+        width: 100%;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 25vw 35vw;
+        margin-left: 14rem;
+        margin-right: 14rem;
+    }
+    .private-container img {
+        grid-column: 2 ;
+    }
+    .private-space-container {
+        grid-column: 1;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .private-space-container h3 {
+        padding-bottom:2rem ;
+       }
+       .private-space-container p {
+           padding-bottom:2rem ;
+          }
+    
+    .prestation-container{
+        display:flex ;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .subtitle-container {
+        width: 30%;
+        margin-left: 8rem;
+        margin-bottom: 4rem;
+    }
+    .prestation-container span {
+        display: none;
+    }
+    
+}
+/* Fin du media screen */
 
 .research-container {
     background-color: rgba(5, 48, 71, 0.15);
@@ -86,6 +221,16 @@ h1 span {
 .research-container span {
     padding-bottom: 1rem;
     text-decoration: underline;
+}
+.prestation-title-container{
+    padding-left: 3rem;
+    padding-right: 2rem;
+}
+.share-container{
+    padding-left: 3rem;
+}
+.private-container{
+padding-left: 3rem;
 }
 
 .noHeaderNoFooter {
@@ -213,7 +358,7 @@ footer {
 
 .style-container {
     background-color: rgba(5, 48, 71, 0.15);
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     border-radius: 7%;
     display: flex;
@@ -221,11 +366,26 @@ footer {
     align-items: center;
     margin-bottom: 4rem;
 }
+@media screen and (min-width: 700px){
+    
+    .style-container {
+        width: 35vw;
+        max-width: 25% ;
+        background-color: white;
+        box-shadow: 1px 1px 1px 1px var(--secondaryColor);
+    }
+
 
 .style-container img {
     max-width: 100%;
-    height: 30vh;
+    height: 40vh;
     border-radius: 7%;
+} }
+@media screen and (min-width: 700px){
+    
+    .style-container img{
+        width: 30vw;
+    }
 }
 
 .style-container *{
@@ -255,4 +415,22 @@ padding-bottom: 1rem;
 .flex-container img {
     width: 30vh;
     height: 30vh;
+}
+@media screen and (min-width: 700px){
+    .share-container img {
+        height: 45vh;
+        width: 40vw;
+        max-width: 80%;
+        border-radius: 7%;
+    }
+    .private-container img {
+        height: 45vh;
+        width: 40vw;
+        max-width: 80%;
+        border-radius: 7%;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
