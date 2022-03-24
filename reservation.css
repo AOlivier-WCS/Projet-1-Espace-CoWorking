@@ -113,11 +113,11 @@ p.start{
         margin: 0;
         align-self: start;
     }
-    .social{
+    .social ol{
         display: flex;
         justify-content: space-around;
     } 
-    .social li, .socialMedia li{
+    .social ol li, .socialMedia li{
         list-style: none;
         font-size: 2rem;
     }
