@@ -1,7 +1,9 @@
 :root {
      /* Mise en page Couleur thème */
     --mainColor : #ffb703;
+    --mainColorLight : rgba(255, 183, 3, 0.1);
     --secondaryColor : #023047;
+    --secondaryColorLight : rgba(2, 48, 71, 0.1);
     /* Mise en page Police */
     --policeColor : #000000;
     --secondPoliceColor : #023047;
@@ -171,6 +173,10 @@ footer {
     display:none;
     width: 100%;
     height: 100%;
+}
+
+.aPropos, .communaute-mobile-hidden {
+    display: none;
 }
 
 /*End footer*/
