@@ -58,7 +58,7 @@ form{
     width: 80%;
     
 }
-#secondName, #name,{
+#secondName, #name {
     height: 5vh;
 }
 
@@ -188,4 +188,4 @@ p.start{
         height: 50px;
         justify-self: normal;
         align-self: start;
-    }
+    }}
