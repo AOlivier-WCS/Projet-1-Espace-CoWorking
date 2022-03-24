@@ -117,7 +117,7 @@ p.start{
         display: flex;
         justify-content: space-around;
     } 
-    .social li, .socialMedia li{
+    .social ol li, .socialMedia li{
         list-style: none;
         font-size: 2rem;
     }
