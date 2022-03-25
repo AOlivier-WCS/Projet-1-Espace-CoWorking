@@ -1,7 +1,9 @@
 :root {
      /* Mise en page Couleur thème */
     --mainColor : #ffb703;
+    --mainColorLight : rgba(255, 183, 3, 0.1);
     --secondaryColor : #023047;
+    --secondaryColorLight : rgba(2, 48, 71, 0.1);
     /* Mise en page Police */
     --policeColor : #000000;
     --secondPoliceColor : #023047;
@@ -19,8 +21,7 @@ img {
     max-width: 80%;
 }
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 0;
 }
 
 
@@ -49,11 +50,12 @@ nav {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
-    margin-left:40%: 
+    
     border-radius: 60px;
     background-color:var(--secondaryColor);
     color: white;
 }
+
 
 /* Welcome */
 
@@ -85,8 +87,8 @@ h1 span {
 }
 
 #img-accueil {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 @media screen and (min-width: 700px){
@@ -128,11 +130,10 @@ h1 span {
         width: 80%;
     }
     .prestation-title-container{
-        width: 80%;
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
-        margin-left: 14rem;
-        margin-right: 14rem;
+        padding-left: 18rem;
 
     }
     .prestation-title-container p {
@@ -148,12 +149,15 @@ h1 span {
         
     }
     .share-container {
-        margin-left: 14rem;
-        margin-right: 14rem;
         width: 100%;
         display: grid;
+        margin-left: 14rem;
         justify-content: space-around;
         grid-template-columns: 35vw 25vw;
+    }
+
+    .share-container img{
+        width: 30vw;
     }
     
     .share-space-container {
@@ -169,19 +173,31 @@ h1 span {
         justify-content: space-around;
         grid-template-columns: 25vw 35vw;
         margin-left: 14rem;
-        margin-right: 14rem;
+        
     }
-    .private-container img {
-        grid-column: 2 ;
-    }
+    
     .private-space-container {
         grid-column: 1;
         grid-row: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        align-items: flex-end;
     }
+   
+
+    #image-private-space{
+max-width: 100%;
+width: 40vw;
+height: 40vh;
+border-radius: 5%;
+    }
+    #image-share-space{
+        max-width: 100%;
+        width: 40vw;
+        height: 40vh;
+        border-radius: 5%;
+            }
 
     
     .prestation-container{
@@ -197,7 +213,10 @@ h1 span {
     .prestation-container span {
         display: none;
     }
-    
+    .button-style{
+        width: 40%;
+    }
+   
 }
 /* Fin du media screen */
 
@@ -218,21 +237,28 @@ h1 span {
     text-decoration: underline;
 }
 .prestation-title-container{
-    padding-left: 3rem;
-    padding-right: 2rem;
+    width: 80%;
 }
-.share-container{
+/* .share-container{
     padding-left: 3rem;
 }
 .private-container{
 padding-left: 3rem;
-}
+} */
 
 .noHeaderNoFooter {
     margin-left: 5%;
     margin-right: 5%;
 }
 
+/* Partie pas que.. */
+
+.pasQue-box1, .pasQue-box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 /* section {
     width: 90%;
 } */
@@ -247,6 +273,14 @@ padding-left: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+.flex-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 58vh;
+
 }
 
 /*.deco {
@@ -302,6 +336,10 @@ footer {
     display:none;
     width: 100%;
     height: 100%;
+}
+
+.aPropos, .communaute-mobile-hidden {
+    display: none;
 }
 
 /*End footer*/
@@ -366,7 +404,7 @@ footer {
     .style-container {
         width: 35vw;
         max-width: 35% ;
-        background-color: white;
+        
         box-shadow: 1px 1px 1px 1px var(--secondaryColor);
     }
 
@@ -411,6 +449,10 @@ padding-bottom: 1rem;
     width: 30vh;
     height: 30vh;
 }
+
+#restingRoom {
+    max-width: 80%;
+
 @media screen and (min-width: 700px){
     .share-container img {
         height: 45vh;
