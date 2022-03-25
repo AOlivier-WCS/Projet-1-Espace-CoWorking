@@ -9,78 +9,102 @@
 
 <body>
 
-<header>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <a href="index.html" class="active"><img src="img/logo.png" alt="logoSC"></a>
-    </div>
-    <!--  burger  -->
-    <!--  logo ouvert / fermé -->
-    <div class="toggle">
-
-      <i id="burger" class="fas fa-bars ouvrir"></i>
-      <i id="croix" class="fas fa-times fermer"></i>
-    </div>
-    <ul class="menu">
-       <!-- onglets -->
-      <li id="cowork"><a href="#">Coworking space </a>
-        <i class="fa-solid fa-chevron-down"></i>
-        <div class="coworkingSpace">
+  <header>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <a href="index.html" class="active"><img src="img/logo.png" alt="logoSC"></a>
+      </div>
+      <!--  burger  -->
+      <!--  logo ouvert / fermé -->
+      <div class="toggle">
+        <i class="fas fa-bars ouvrir"></i>
+        <i class="fas fa-times fermer"></i>
+      </div>
+      <ul class="menu">
+        <!--  onglets -->
+        <li id="cowork"><a href="#">Coworking space </a>
+          <i class="fa-solid fa-chevron-down"></i>
+          <div class="coworkingSpace">
+            <ul>
+              <li><a href="privateOffice.html">Nos bureaux privés</a></li>
+              <li><a href="sharedOffice.html">Nos bureaux partagés</a></li>
+              <li><a href="meetingRoom.html">Nos salles de réunion</a></li>
+              
+            </ul>
+          </div>
+        </li>
+        <li id="servicesMenu"><a href="#">Nos services</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        <div class="servicesDeroulant">
           <ul>
-            <li><a href="privateOffice.html">Nos bureaux privés</a></li>
-            <li><a href="sharedOffice.html">Nos bureaux partagés</a></li>
-            <li><a href="meetingRoom.html">Nos salles de réunion</a></li>
+            <li><a href="restauration.html">Restauration</a></li>
+            <li><a href="espacesDetente.html">Espace détente</a></li>
             <li><a href="domiciliation.html">Domiciliation</a></li>
           </ul>
         </div>
       </li>
-      <li id="servicesMenu"><a href="#">Nos services</a>
-        <i class="fa-solid fa-chevron-down"></i>
-      <div class="servicesDeroulant">
-        <ul>
-          <li><a href="restauration.html">Restauration</a></li>
-          <li><a href="espacesDetente.html">Espace détente</a></li>
-        </ul>
-      </div>
-    </li>
-      <li><a href="aboutUs.html">Notre communauté </a></li>
-      <li><a href="contact.html">Contact </a></li>
-      <li><button class="btn" onclick="window.location.href='reservation.html'">Réservation</button></li>
-    </ul>
-  </nav>
-</header>
+        <li><a href="aboutUs.html">Notre communauté </a></li>
+        <li><a href="reservation.html">Contact </a></li>
+        <li><button class="btn" onclick="window.location.href='reservation.html'">Réservation</button></li>
+      </ul>
+    </nav>
+  </header>
 <!-- fin barre navigation -->
 <main> 
-<h1>Sharing is <span> Caring </span> </h1>
+      <div class="deskstop-container-home"> 
+        <div class="bloc-1">
 
-<!-- <div class="noHeaderNoFooter">
-<h1>Sharing is caring</h1> -->
+          <h1>Sharing is <span> Caring </span> </h1>
+          
+          <div class="welcome-container">
+            <span class="arrow">&#x2192;</span>
+            <p>Partagez un lieu convivial et chaleureux avec notre communauté de co-workers Partagez un lieu convivial et chaleureux avec notre communauté de co-workers</p>
+            <ul>
+              <li><img src="/img/logo%20bureau.png" alt=""></li>
+              <li><img src="/img/logo%20bureau.png" alt=""></li>
+              <li><img src="/img/logo%20bureau.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+  <img id="img-accueil" src="/img/bureau-avec-retour-cythere%201.png" alt="bureau">
+      </div>
 
-<div class="welcome-container">
-  <span>&#x2192</span>
-  <p>Partagez un lieu convivial et chaleureux avec notre communauté de co-workers Partagez un lieu convivial et chaleureux avec notre communauté de co-workers</p>
-</div>
-
-<section class="research-container">
+<!-- <section class="research-container">
   <p>Votre besoin </p>
   <span> Que recherchez-vous ? </span>
-</section>
+</section> -->
 
 <section class="flex-container">
-  <h2>Nos prestations</h2>
-    <img src="/img/Gestion_espace-coworking.jpeg" alt="espaces-partage">
-    <h3>Nos espaces partagés</h3>
-    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
-    <button class="button-style">En savoir +</button>
+  
+  <div class="prestation-title-container" >
 
-    <img src="/img/Gestion_espace-coworking.jpeg" alt="espaces-privés">
-    <h3>Nos espaces privatifs</h3>
-    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
-    <button class="button-style">En savoir +</button>
+    <h2>Nos prestations</h2>
+    <p> Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt </p>
+  </div>
+  <div class="share-container">
+    
+    <img id="image-share-space" src="/img/Gestion_espace-coworking.jpeg" alt="espaces-partage">
+    <article class="share-space-container"> 
+      <h3>Nos espaces partagés</h3>
+      <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+      <button class="button-style">En savoir +</button>
+    </article>
+  </div>
+
+  <div class="private-container">
+
+    <img id="image-private-space" src="/img/Gestion_espace-coworking.jpeg" alt="espaces-privés">
+    <article class="private-space-container"> 
+      
+      <h3>Nos espaces privatifs</h3>
+      <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+      <button class="button-style">En savoir +</button>
+    </article>
+  </div>
 </section>
 
-<h2>Mais également...</h2>
+<h2 class="subtitle-container">Mais également...</h2>
 
 <section class="prestation-container">
     <div class="style-container"> 
@@ -88,7 +112,8 @@
     <h3>Nos salles de réunion</h3>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
-    <p class="discover"> <a href="">Découvrir nos offres</a><span>&#10132</span></p>
+    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+    <p class="discover"> <a href="">Découvrir nos offres</a><span>&#10132;</span></p>
 </div>
 <div class="style-container"> 
     <img src="/img/Gestion_espace-coworking.jpeg" alt="">
@@ -96,37 +121,83 @@
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
-    <p class="discover"> <a href="">Découvrir nos offres</a><span>&#10132</span></p>
+    <p class="discover"> <a href="">Découvrir nos offres</a><span>&#10132;</span></p>
+    </div>
 </section>
 
-<section>
-  <div class="flex-container">
-    <h2>Du co-working oui mais pas que ...</h2>
-    <img src="./img/placeholderMobile.jpg" alt="Restaurant" id="notOnly">
-    <h3>Notre service de restauration</h3>
+<h2 id="pasQue-title">Du co-working oui mais pas que ...</h2>
+<section id = "pasQue">
+  <!--<div class="flex-container">-->
+    
+    <div class="pasQue-box1">
+    <img src="./img/food-bio.png" alt="Restaurant" id="notOnlyImg">
+    <h3 id = "resto">Notre service de restauration</h3>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+    </div>
+
+
+  <div class="pasQue-box2">
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
 
     <h3>Notre espace détente</h3>
-    <img src="./img/placeholderMobile.jpg" alt="Espace détente" id="restingRoom">
+    <img src="./img/espace-detente.jpg" alt="Espace détente" id="restingRoom">
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+  <!--</div>-->
   </div>
 </section>
 
-<section>
+<!-- Hidden section in mobile view -->
+<section class="aPropos">
+  <h2>a propos de nous</h2>
+  <div class="aPropos-articles">
+  <article>
+    <img src="./img/remi1.jpg" alt="Photo de Remi">
+    <h3>Remi : Caring Co-worker</h3>
+    <p>“Lorem Elsass Ipsum mitt picon bière munster du ftomi! Ponchour bisame”</p>
+  </article>
+  <article>
+    <img src="./img/remi2.jpg" alt="Photo de Remi">
+    <h3>Remi : Caring Co-worker</h3>
+    <p>“Lorem Elsass Ipsum mitt picon bière munster du ftomi! Ponchour bisame”</p>
+  </article>
+  <article>
+    <img src="./img/remi3.jpg" alt="Photo de Remi">
+    <h3>Remi : Caring Co-worker</h3>
+    <p>“Lorem Elsass Ipsum mitt picon bière munster du ftomi! Ponchour bisame”</p>
+  </article>
+  <article>
+    <img src="./img/remi4.jpg" alt="Photo de Remi">
+    <h3>Remi : Caring Co-worker</h3>
+    <p>“Lorem Elsass Ipsum mitt picon bière munster du ftomi! Ponchour bisame”</p>
+  </article>
+  </div>
+</section>
+
+<!-- One image in mobile view -->
+
+<section class="community-section">
+  <h2>Notre communauté Co-Worker</h2>
+  <div class="communaute-desktop-hidden">
   <div class="flex-container">
-    <h2>Notre communauté </h2>
-    <img src="./img/placeholderMobile.jpg" alt="Espace détente" id="community">
+    <img src="./img/communaute-mobile.png" alt="Espace détente" id="community">
     <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
-    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
+    <p>Profitez de nos espace 24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi! Profitez de nos espace
+      24h/24 et 7j/7orem Elsass Ipsum mitt picon bière munster du ftomi!</p>
   </div>
   <div class="joinUs">
-    <a href="">Rejoignez nous </a><p>&#10132</p>
+    <a href="" > <button class="button-style">Rejoignez nous &#10132;</button> </a>
+    <!-- <p>&#10132;</p> -->
+  </div>
+</div>
+  <div class="communaute-mobile-hidden">
+    <img src="./img/commaunote1.jpg" alt="Espace commun">
+    <img src="./img/commaunote2.jpg" alt="Espace commun">
+    <img src="./img/commaunote3.jpg" alt="Espace commun">
   </div>
 </section>
-</div>
-
+</main>
 <!-- Footer divided into two parts : footer-community and footer-info -->
 <footer>
   <div class="desktop-hidden">
@@ -177,7 +248,7 @@
 </footer>
   
   
-</body>
 <script src="script.js"></script>
+</body>
 </html>  
 
