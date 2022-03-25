@@ -1,7 +1,9 @@
 :root {
      /* Mise en page Couleur thème */
     --mainColor : #ffb703;
+    --mainColorLight : rgba(255, 183, 3, 0.1);
     --secondaryColor : #023047;
+    --secondaryColorLight : rgba(2, 48, 71, 0.1);
     /* Mise en page Police */
     --policeColor : #000000;
     --secondPoliceColor : #023047;
@@ -309,6 +311,10 @@ footer {
     height: 100%;
 }
 
+.aPropos, .communaute-mobile-hidden {
+    display: none;
+}
+
 /*End footer*/
     
 /* Bureaux privatifs */
@@ -416,6 +422,10 @@ padding-bottom: 1rem;
     width: 30vh;
     height: 30vh;
 }
+
+#restingRoom {
+    max-width: 80%;
+
 @media screen and (min-width: 700px){
     .share-container img {
         height: 45vh;
@@ -433,4 +443,3 @@ padding-bottom: 1rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-}

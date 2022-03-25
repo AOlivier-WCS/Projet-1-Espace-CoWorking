@@ -87,8 +87,12 @@ background-color: rgba(255, 255, 255, 0.9);
 z-index: 3;
 margin: 5px;
 position: relative;
+display: none;
 }
 
+.servicesDeroulant ul {
+    display: none;
+}
 .desktop-hidden {
     width: 100%;
 }
@@ -96,7 +100,7 @@ position: relative;
 
 @media screen and (min-width: 500px) {
 
-
+    
     .menu {
         position: revert;
         height: revert;
@@ -143,7 +147,14 @@ position: relative;
         grid-template-rows: repeat(3, 1fr);
     }
 
-    
+    #repas {
+        height: 436px;
+    width: 550px;
+    left: 114px;
+    top: 2795px;
+    border-radius: 90px;
+
+    }
 
    .titreAlex {
        grid-column-start: 3;
@@ -243,4 +254,103 @@ position: relative;
 
     .footer-menu a {
         color: var(--mainColor);
-    }}
+
+    }
+
+    /* Second part of index.html */
+
+    #pasQue {
+        display: flex;
+        width: 65%;
+        margin: auto;
+    }
+
+    #pasQue p {
+        margin: 0;
+    }
+
+    #pasQue-title {
+        margin-top: 5em;
+        margin-bottom: 2em;
+    }
+    
+    .pasQue-box1 {
+        align-items: center;
+        padding-right: 10%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+        background-color: var(--mainColorLight);
+    }
+
+    .pasQue-box2 {
+        width: 82%;
+        padding-left: 15%;
+        background-color: var(--secondaryColorLight);
+        padding-top: 3%;
+        padding-right: 3%;
+        padding-bottom: 7%;
+    }
+
+    #notOnlyImg {
+        max-width: 100%;
+        margin-bottom: 20%;
+        margin-top: 5%;
+    }
+
+    #resto {
+        display: none;
+    }
+
+    #restingRoom {
+        display: none;
+    }
+
+    /* Index - A propos de nous */
+
+    .aPropos {
+        display: block;
+        margin-top: 5%;
+    }
+    .aPropos h2 {
+        text-align: center;
+    }
+
+    .aPropos article {
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .aPropos article:nth-of-type(2n+2) {
+        background-color: var(--secondaryColorLight);
+    }
+
+    .aPropos-articles {
+        display: flex;
+        gap: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .aPropos img {
+        max-width: 100%;
+    }
+
+    /* Index - Communauté */
+
+    .communaute-mobile-hidden {
+        display:flex;
+        gap: 3%;
+    }
+    .communaute-mobile-hidden img {
+        display:flex;
+        gap: 4%;
+        max-width: 30%;
+    }
+
+    .communaute-desktop-hidden {
+        display: none;
+    }
+
+   
+
