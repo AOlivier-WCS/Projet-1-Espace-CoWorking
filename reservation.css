@@ -71,9 +71,10 @@ iframe{
     width: 100%;
 
 }
-.socialMedia{
-    display:none;
+.social ol li, .socialMedia li{
+    display: none;
 }
+
 .socialMedia i{
     font-size: 1rem;
     margin-left: 30px;
@@ -118,13 +119,18 @@ p.start{
         justify-content: space-around;
     } 
     .social ol li, .socialMedia li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    } 
+    .social ol li, .socialMedia li{
         list-style: none;
         font-size: 2rem;
     }
     .social li img, .socialMedia li img{
         width: 50px;
         height: 50px;
-        margin-top: 50px;
     } 
     .contact>.start{
         grid-column-start:1;
