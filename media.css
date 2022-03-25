@@ -87,8 +87,12 @@ background-color: rgba(255, 255, 255, 0.9);
 z-index: 3;
 margin: 5px;
 position: relative;
+display: none;
 }
 
+.servicesDeroulant ul {
+    display: none;
+}
 .desktop-hidden {
     width: 100%;
 }
@@ -96,7 +100,7 @@ position: relative;
 
 @media screen and (min-width: 500px) {
 
-
+    
     .menu {
         position: revert;
         height: revert;
@@ -143,7 +147,14 @@ position: relative;
         grid-template-rows: repeat(3, 1fr);
     }
 
-    
+    #repas {
+        height: 436px;
+    width: 550px;
+    left: 114px;
+    top: 2795px;
+    border-radius: 90px;
+
+    }
 
    .titreAlex {
        grid-column-start: 3;

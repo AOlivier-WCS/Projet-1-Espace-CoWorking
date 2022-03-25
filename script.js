@@ -2,8 +2,8 @@ let toggle = document.querySelector('.toggle');
 let togglesharing = document.querySelector('.toggleSharing');
 let body = document.querySelector('body');
 let cowork = document.getElementById('cowork');
-let coworkingSpace = document.querySelector('.coworkingSpace');
-let servicesDeroulant = document.querySelector('.servicesDeroulant');
+let coworkingSpace = document.querySelector('.coworkingSpace ul');
+let servicesDeroulant = document.querySelector('.servicesDeroulant ul');
 let servicesMenu = document.querySelector('#servicesMenu');
 
 toggle.addEventListener('click', function() {
