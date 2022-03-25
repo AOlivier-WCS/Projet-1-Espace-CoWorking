@@ -321,11 +321,12 @@ position: relative;
 
     .communaute-mobile-hidden {
         display:flex;
+        gap: 3%;
     }
     .communaute-mobile-hidden img {
         display:flex;
         gap: 4%;
-        max-width: 100%;
+        max-width: 30%;
     }
 
     .communaute-desktop-hidden {
