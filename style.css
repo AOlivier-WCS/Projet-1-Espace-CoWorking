@@ -271,3 +271,7 @@ padding-bottom: 1rem;
     width: 30vh;
     height: 30vh;
 }
+
+#restingRoom {
+    max-width: 80%;
+}
