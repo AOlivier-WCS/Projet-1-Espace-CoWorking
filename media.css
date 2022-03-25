@@ -5,8 +5,8 @@ nav {
 }
 
 .logo {
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 0;
+    margin-left: 0;
 }
 .logo img {
     max-width: 80px;
@@ -93,7 +93,9 @@ position: relative;
     width: 100%;
 }
 
-@media screen and (min-width: 550px) {
+
+@media screen and (min-width: 500px) {
+
 
     .menu {
         position: revert;
@@ -222,20 +224,26 @@ position: relative;
         width: 95%;
     }
 
-    .footer-community {
+    /* .footer-community {
         
-    }
+    } */
 
     .footer-menu {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         padding-right: 5%;
-
     }
+
+    .logo img {
+        width: 150px;
+        height: 150px;
+    }
+    
 
     .footer-menu a {
         color: var(--mainColor);
+
     }
 
     /* Second part of index.html */
@@ -332,3 +340,6 @@ position: relative;
     .communaute-desktop-hidden {
         display: none;
     }
+
+   
+
